@@ -1,20 +1,32 @@
-import { Text, View, StyleSheet, Dimensions } from 'react-native';
+import { Text, View, StyleSheet, Dimensions, TouchableOpacity } from 'react-native';
 import SearchScreen from './search/Search';
 import BannerList from './banner/Banner';
 import colors from '../../../Component/colors';
+import CountDown from '../../../Component/countDown';
+import ListDiscount from './discount/listDiscount';
+import VideoScreen from './video/Video';
+import NewShoe from './product/NewShoe';
+import NewClothes from './product/newClothes';
 const HomeScreen = () => {
     return (
         <View style={styles.container}>
             <SearchScreen />
             <BannerList />
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={{ marginLeft: 10, fontWeight: 'bold', fontSize: 12 }}>Giảm giá kết thúc</Text>
-                <Text style={styles.timeText}>10</Text>
-                <Text style={styles.space}>:</Text>
-                <Text style={styles.timeText}>10</Text>
-                <Text style={styles.space}>:</Text>
-                <Text style={styles.timeText}>10</Text>
+                <Text style={{ marginLeft: 10, fontWeight: 'bold', fontSize: 12 }}>Discount ends in</Text>
+                <CountDown/>
+                <TouchableOpacity style={styles.buttonText}>
+                    <Text
+                        style={{fontSize:15,color:colors.blue,fontWeight:'bold'}}
+                    >
+                        See all
+                    </Text>
+                </TouchableOpacity>
             </View>
+            <ListDiscount />
+            <VideoScreen/>
+            <NewShoe />
+            <NewClothes />
         </View>
     )
 }
@@ -36,5 +48,9 @@ const styles = StyleSheet.create({
     space:{
         marginLeft:5,
         fontWeight:'bold'
+    },
+    buttonText:{
+        position:'absolute',
+        right:10,
     }
 })
