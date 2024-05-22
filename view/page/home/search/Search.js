@@ -1,5 +1,5 @@
 import { Ionicons } from '@expo/vector-icons';
-import {StyleSheet, Text, TextInput, View} from 'react-native';
+import {StyleSheet, Text, TextInput, TouchableOpacity, View} from 'react-native';
 import colors from '../../../../Component/colors';
 const SearchScreen = ()=>{
     return (
@@ -11,7 +11,13 @@ const SearchScreen = ()=>{
                 style={{marginLeft:15}}
                 />
             </View>
-                <Ionicons name='camera' color={colors.green} size={30}/>
+                <TouchableOpacity
+                    onPress={()=>{
+                        console.log('A');
+                    }}
+                >
+                    <Ionicons name='camera' color={colors.green} size={30}/>
+                </TouchableOpacity>
         </View>
     )
 }

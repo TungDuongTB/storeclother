@@ -1,9 +1,12 @@
 import { StyleSheet,  View } from 'react-native';
-import {MainNavigation} from './view/main/MainNavigation';
+import MainNavigation from './view/main/MainNavigation';
+import { NavigationContainer } from '@react-navigation/native';
 
 const App=() =>{
   return (
-        <MainNavigation />
+    <NavigationContainer>
+      <MainNavigation />
+    </NavigationContainer>
   );
 }
 export default App;

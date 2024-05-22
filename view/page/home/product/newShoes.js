@@ -2,7 +2,7 @@ import { StyleSheet, TouchableOpacity, View, Text, FlatList } from "react-native
 import colors from "../../../../Component/colors";
 import dataProduct from "../../../../model/discountProduct"
 import ViewList from "../../../../Component/viewList";
-const NewShoe = () => {
+const NewShoes = () => {
 
     return (
         <View style={styles.container}>
@@ -26,7 +26,7 @@ const NewShoe = () => {
         </View>
     )
 }
-export default NewShoe;
+export default NewShoes;
 const styles = StyleSheet.create({
     container: {
         margin:10

@@ -32,7 +32,7 @@ const discoundModel = [
         image:require('../image/hatDior.jpg')
     },
     {
-        id:3,
+        id:5,
         company:'Louis Vuitton',
         color:'Luxury',
         reducePrice:150,
@@ -40,7 +40,7 @@ const discoundModel = [
         image:require('../image/glasses.jpg')
     },
     {
-        id:5,
+        id:6,
         company:'Louis Vuitton',
         color:'Sexy',
         reducePrice:98,
@@ -48,7 +48,7 @@ const discoundModel = [
         image:require('../image/miniSkirt.jpg')
     },
     {
-        id:6,
+        id:7,
         company:'Adidas',
         color:'White',
         reducePrice:10,
