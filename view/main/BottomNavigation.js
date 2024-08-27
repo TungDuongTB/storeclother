@@ -28,11 +28,13 @@ const BottomTabNavigation = () => {
                         name="home"
                         size={25}
                         color={focused?'white':colors.black}
-
                       />
+                      
                     ),
-                    title: 'Trang chủ'
+                    title: 'Trang chủ',
+                    
                   }}
+                  
             />
             <Tabs.Screen 
                 name="CategoryScreen"
